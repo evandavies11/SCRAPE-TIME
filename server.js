@@ -30,7 +30,7 @@ app.use(express.static("public"));
 
 //mongoose.connect("mongodb://localhost/overwatchpopulate", { useNewUrlParser: true });
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/overwatchpopulate";
-mongoose.connec
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
 // A GET route for scraping the echoJS website
 app.get("/scrape", function (req, res) {
