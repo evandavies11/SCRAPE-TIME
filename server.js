@@ -29,7 +29,7 @@ app.use(express.static("public"));
 // Connect to the Mongo DB
 
 //mongoose.connect("mongodb://localhost/overwatchpopulate", { useNewUrlParser: true });
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/SCRAPE-TIME";
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
 // A GET route for scraping the echoJS website
